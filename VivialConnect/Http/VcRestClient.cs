@@ -211,9 +211,8 @@ namespace VivialConnect.Http
             vcUserAgent.Add("lang", "C#");
             vcUserAgent.Add("publisher", "vivialconnect");
             vcUserAgent.Add("request_lib", "requests");
-            vcUserAgent.Add("clr_version", Environment.Version.ToString());
+            vcUserAgent.Add("lang_version", Environment.Version.ToString());
             vcUserAgent.Add("platform", Environment.OSVersion.ToString());
-            vcUserAgent.Add("machine", Environment.MachineName.ToString());
 
             return JsonConvert.SerializeObject(vcUserAgent, Formatting.None);           
         }
